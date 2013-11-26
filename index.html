@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Little Coffee & Print Shop</title>
+<link rel="stylesheet" type="text/css" href="css/ui.css">
+</head>
+<body>
+
+	<div id="container" class="container">
+
+		<div id="clients" class="clients"></div>
+		<div id="kev" class="kev"></div>
+
+		<div id="cups" class="cups">
+			<ul></ul>
+		</div>
+
+		<div id="overlay" class="overlay"></div>
+
+		<div id="help" class="help"></div>
+
+		<div id="timeline" class="timeline meter"><span></span></div>
+
+		<div id="dialog" class="dialog">
+			<div class="content"></div>
+			<div class="buttons">
+				<button class="button confirm" data-option="yes">Yes</button>
+				<button class="button cancel" data-option="no">No</button>
+			</div>
+		</div>
+		<div id="clock" class="clock"></div>
+
+		<div id="menu" class="menu">
+			<div class="first">
+				<div id="money" class="money"></div>
+				<span class="label">$</span>
+			</div>
+			<div>
+				<div id="popularity" class="popularity meter"><span></span></div>
+				<span class="label">Popularity</span>
+			</div>
+		</div>
+
+		<div class="ribbon shop">
+			
+			<div class="container">
+				<div class="base">
+					<div id="shop">
+						<a href="#" id="shop-hook" class="hook">Visit Shop</a>
+						<ul id="shop-items" class="hidden"></ul>
+					</div>
+				</div>
+				<div class="left_corner"></div>
+				<div class="right_corner"></div>
+			</div>
+
+		</div>
+
+		<div class="ribbon inventory">
+			
+			<div class="container">
+				<div class="base">
+					<div id="inventory" >
+						<a href="#" id="inventory-hook" class="hook">Inventory</a>
+						<ul id="inventory-items" class="hidden"></ul>
+					</div>
+				</div>
+				<div class="left_corner"></div>
+				<div class="right_corner"></div>
+			</div>
+
+		</div>
+
+		<div id="coffee" class="coffee"><a href="#">Make Coffee</a></div>
+
+		<canvas id="content" width="900" height="600">
+			Sorry, your browser doesn't support canvas awesomeness
+		</canvas>
+
+	<a href="#" id="start" class="start button">START!</a>
+
+	<div id="instructions" class="instructions">
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Hi Kev! Welcome to your very own print cafe!</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Now tell me, is this your first time playing?</p>
+			<a href="#" data-option="next" class="button">yes</a><a href="#" data-option="start" class="button">no</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Alright! So here's how it works...</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Clients will randomly appear in the shop throughout the work day, and they will either request coffee or printing services.</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Each of these tasks require certain items. Coffee requires you to brew <span>coffee</span> using <span>beans</span>, while prints require <span>ink</span> and <span>paper</span> to complete.</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>You can check your inventory by clicking on the inventory icon at the bottom of the screen to make sure your shop is not out of stock in case a client comes in.</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>That's not all! You may only do ONE print job at a time with the basic printer, and coffee will go bad at the end of your work day and you will be required to make a fresh batch every morning.</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>Also, at first you won't have a lot of clients... this is where your popularity meter comes in. The more jobs you do the more popular you'll become, and the more popular you are the more clients you'll get!</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>The goal of the game is to become rich and famous!</p>
+			<a href="#" data-option="next" class="button">Next</a>
+		</div>
+
+		<div class="dialog">
+			<h4>Tutorial</h4>
+			<p>That's it from me! Good luck -xox-</p>
+			<a href="#" data-option="start" class="button">Start!</a>
+		</div>
+			
+	</div>
+	</div>
+	
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/store.js"></script>
+<script src="js/clients.js"></script>
+<script src="js/time.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
